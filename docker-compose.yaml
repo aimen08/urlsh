@@ -10,8 +10,6 @@ services:
       - ${PORT:-2000}:${PORT:-2000}
     volumes:
       - .:/go/src/app:delegated
-    env_file:
-      - .env
     environment:
       - POSTGRES_HOST=urlshdb
       - CGO_ENABLED=0
